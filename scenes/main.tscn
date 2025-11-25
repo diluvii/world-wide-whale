@@ -8,8 +8,8 @@
 
 [node name="LevelRoot" parent="." instance=ExtResource("1_o5qli")]
 
+[node name="frame" parent="." instance=ExtResource("3_sugp2")]
+
 [node name="transition-screen" parent="." instance=ExtResource("1_0wfyh")]
 visible = false
 follow_viewport_enabled = false
-
-[node name="frame" parent="." instance=ExtResource("3_sugp2")]

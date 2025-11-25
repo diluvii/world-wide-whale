@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvh258yrl52a7"]
+[gd_scene load_steps=8 format=3 uid="uid://dvh258yrl52a7"]
 
 [ext_resource type="Texture2D" uid="uid://u4ait6tfnr03" path="res://assets/img/player/walk2.png" id="1_g2els"]
 [ext_resource type="Script" uid="uid://dxkp03n62jmgt" path="res://scripts/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://da2il61eu5ome" path="res://assets/img/player/walk-1.png" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://bemiio1dnmh33" path="res://scripts/player_hitbox.gd" id="4_dqkch"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
 animations = [{
@@ -22,13 +23,17 @@ animations = [{
 radius = 1054.0
 height = 4776.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dqkch"]
+radius = 1641.0
+height = 5690.0
+
 [node name="player" type="CharacterBody2D"]
 texture_filter = 1
 collision_layer = 2
 script = ExtResource("1_qhqgy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(8, 124)
+position = Vector2(84, 137)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"idle"
 autoplay = "idle"
@@ -39,4 +44,11 @@ position = Vector2(-338, 246)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_qhqgy")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="hitbox" type="Area2D" parent="."]
+collision_layer = 2
+script = ExtResource("4_dqkch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(-519, 107)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_dqkch")

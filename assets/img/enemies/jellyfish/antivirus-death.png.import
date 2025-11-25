@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dinoopxrbepd8"
-path="res://.godot/imported/index.png-659c11691fe5279cf81f33eb936290a4.ctex"
+uid="uid://dj8d3mlm1d7ng"
+path="res://.godot/imported/antivirus-death.png-3da2365213bcc45e0067c7d7fbab62dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://build/index.png"
-dest_files=["res://.godot/imported/index.png-659c11691fe5279cf81f33eb936290a4.ctex"]
+source_file="res://assets/img/enemies/jellyfish/antivirus-death.png"
+dest_files=["res://.godot/imported/antivirus-death.png-3da2365213bcc45e0067c7d7fbab62dc.ctex"]
 
 [params]
 
