@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvh52u0tt27dl"]
+
+[ext_resource type="Texture2D" uid="uid://da5kag7l4n83k" path="res://assets/img/components/healthbar-4.png" id="1_dvj6e"]
+
+[node name="frame" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(246, 77)
+scale = Vector2(8, 8)
+texture = ExtResource("1_dvj6e")
