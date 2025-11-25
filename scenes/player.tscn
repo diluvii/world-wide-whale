@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvh258yrl52a7"]
+
+[ext_resource type="Texture2D" uid="uid://u4ait6tfnr03" path="res://assets/img/player/walk2.png" id="1_g2els"]
+[ext_resource type="Script" uid="uid://dxkp03n62jmgt" path="res://scripts/player.gd" id="1_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://da2il61eu5ome" path="res://assets/img/player/walk-1.png" id="2_qhqgy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqtel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g2els")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qhqgy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qhqgy"]
+radius = 1054.0
+height = 4776.0
+
+[node name="player" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 2
+script = ExtResource("1_qhqgy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 124)
+sprite_frames = SubResource("SpriteFrames_hqtel")
+animation = &"idle"
+autoplay = "idle"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-338, 246)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_qhqgy")
+
+[node name="Camera2D" type="Camera2D" parent="."]

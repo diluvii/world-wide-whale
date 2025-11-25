@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cfqomayt2l7qn"]
+
+[node name="transition-screen" type="CanvasLayer"]
+follow_viewport_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+clip_contents = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -800.0
+offset_top = -450.0
+offset_right = -800.0
+offset_bottom = -450.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true

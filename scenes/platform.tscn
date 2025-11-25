@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmkqtvpdcclvo"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v4t87"]
+load_path = "res://.godot/imported/tile.png-ce2f51e22a9aac2179a3200fb4e3780a.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(66, 67)
+
+[node name="platform" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = SubResource("CompressedTexture2D_v4t87")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_s8bxr")
