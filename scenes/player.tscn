@@ -37,7 +37,6 @@ position = Vector2(84, 137)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"idle"
 autoplay = "idle"
-flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-338, 246)

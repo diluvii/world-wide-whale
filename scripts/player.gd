@@ -9,6 +9,9 @@ const SPEED = 1200.0
 const JUMP_VELOCITY = -1200.0
 const FALL_LIMIT = 4500.0
 
+func onready() -> void:
+	animated_sprite_2d.flip_h = true
+
 func check_dash_hit() -> void:
 	for area in hitbox.get_overlapping_areas():
 		print(area)
