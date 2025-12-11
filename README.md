@@ -20,4 +20,6 @@ Vision:
 - As you explore the world you unlock the computer architecture-explored map, bit by bit.
 - Fight enemies that are thinly-veiled allusions to antivirus programs! Commit actions that are thinly-veiled analogues to privilege escalation!
 
+See a demo of the first level [here](https://diluvii.github.io/world-wide-whale/).
+
 ## Acknowledgements
